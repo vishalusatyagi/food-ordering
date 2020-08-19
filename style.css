@@ -155,7 +155,7 @@ html{
     padding-bottom: 20px;
 }
 .service-item{
-    width: 400px;
+    width: 280px;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -175,8 +175,8 @@ html{
     left: 0;
     position: absolute;
     background-color: black;
-    width: 398px;
-    height: 230px;
+    width: 280px;
+    height: 225px;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
     z-index: -1; 
