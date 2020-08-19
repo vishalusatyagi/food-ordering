@@ -235,7 +235,7 @@ html{
     box-shadow: -5px -5px white;
     position: absolute;
     height: 510px;
-    width: 250px;
+    width: 280px;
     z-index: -1;
     opacity: .7;
 }
