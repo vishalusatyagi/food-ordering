@@ -11,12 +11,9 @@
 html{
     font-size: 10px;
 }
-.navbar{
-    background-color: transparent;
-}
-.container-fluid{
+.containerr{
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
 }
 .section-title{
     display: flex;
@@ -153,9 +150,10 @@ html{
     align-items: center;
     flex-direction: column;
     padding-bottom: 20px;
+    width: 100%;
 }
 .service-item{
-    width: 280px;
+    min-width: 360px;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -175,8 +173,8 @@ html{
     left: 0;
     position: absolute;
     background-color: black;
-    width: 280px;
-    height: 225px;
+    width: 358px;
+    height: 230px;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
     z-index: -1; 
@@ -208,6 +206,9 @@ html{
     background-position: center center;
     background-size: cover;
 }
+.contact_lower{
+    position: relative;
+}
 .contact .section-title{
     color: white;
     padding: 0;
@@ -217,25 +218,26 @@ html{
     position: relative;
     z-index: 1;
     border-top-right-radius: 10px;
+    width: 100%;
 }
 .contact_form{
-    width: 60%;
+    min-width: 60%;
     display: flex;
     flex-direction: column;
     color: white;
     margin-left: 40px;
     margin-bottom: 10px;
 }
-.contact::before{
+.contact_lower::before{
     content: "";
-    top: 200px;
-    left: 80px;
+    top: 0px;
+    left: 0px;
     background-color: black;
     border-radius: 40px;
     box-shadow: -5px -5px white;
     position: absolute;
     height: 510px;
-    width: 280px;
+    width: 250px;
     z-index: -1;
     opacity: .7;
 }
@@ -247,19 +249,20 @@ html{
     padding: 10px;
 }
 .contact_form button{
-    margin-top: 10px;
+    margin-top: 15px;
     padding: 10px;
     border: none;
 }
 .contact_form button:hover{
     background-color: tomato;
     color: white;
+    outline: none;
 }
 /* End contact section */
 
 /* footer section */
 .footer{
-    height: 100px;
+    min-height: 100px;
     flex-direction: column;
     background-color: brown;
     background-size: cover;
