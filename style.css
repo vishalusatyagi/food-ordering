@@ -228,7 +228,7 @@ html{
 }
 .contact::before{
     content: "";
-    top: 180px;
+    top: 200px;
     left: 20px;
     background-color: black;
     border-radius: 40px;
