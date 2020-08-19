@@ -84,7 +84,7 @@ html{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/food-ordering/img/photo-1.jpg);
+    background-image: url(./food-ordering/img/photo-1.jpg);
     background-size: cover;
     background-position: left center;
     z-index: -1;
@@ -197,7 +197,7 @@ html{
 /* contact section */
 .contact{
     height: 100vh;
-    background-image: url(/food-ordering/img/contactbackground.jpg);
+    background-image: url(./food-ordering/img/contactbackground.jpg);
     background-position: center left;
     background-size: cover;
 }
