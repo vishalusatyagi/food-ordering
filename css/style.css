@@ -2,12 +2,13 @@
 *{
     margin: 0;
     padding: 0;
-    text-decoration: none;
+    text-decoration: none !important;
     list-style-type: none;
     box-sizing: border-box;
     font-family: Lobster, sans-serif;
     letter-spacing: .1rem;
 }
+
 html{
     font-size: 10px;
 }
@@ -19,6 +20,7 @@ html{
     display: flex;
     justify-content: center;
     padding: 50px 0 20px 0;
+    margin-bottom: 20px;
 }
 .section-title h1{
     font-size: 4rem;
@@ -86,6 +88,8 @@ html{
     background-size: cover;
     background-position: left center;
     z-index: -1;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 #home .home::after{
     content: "";
@@ -95,6 +99,8 @@ html{
     width: 100%;
     height: 100%;
     background-color: black;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     z-index: -1;
     opacity: .4;
 }
@@ -135,6 +141,7 @@ html{
     padding-top: 20px;
     justify-content: flex-start;
     align-items: center;
+    /* background-color: coral;*/
 }
 .service-items{
     display: flex;
@@ -200,6 +207,7 @@ html{
 .contact {
     position: relative;
     z-index: 1;
+    border-top-right-radius: 10px;
 }
 .contact_form{
     width: 30%;
@@ -207,19 +215,19 @@ html{
     flex-direction: column;
     padding: 20px;
     color: white;
-    margin-left: 50px;
+    margin-left: 80px;
     margin-bottom: 10px;
 }
 .contact::before{
     content: "";
     top: 130px;
-    left: 50px;
+    left: 80px;
     background-color: black;
     border-radius: 40px;
+    box-shadow: -5px -5px white;
     position: absolute;
     height: 510px;
     width: 410px;
-    box-shadow: -5px -5px white;
     z-index: -1;
     opacity: .7;
 }
@@ -233,6 +241,11 @@ html{
 .contact_form button{
     margin-top: 10px;
     padding: 10px;
+    border: none;
+}
+.contact_form button:hover{
+    background-color: tomato;
+    color: white;
 }
 /* End contact section */
 
@@ -244,6 +257,7 @@ html{
     background-size: cover;
     background-position: right top;
     position: relative;
+    border-radius: 10px;
     z-index: 1;
     justify-content: center;
     align-items: center;
@@ -254,6 +268,7 @@ html{
     left: 0;
     background-color: brown;
     position: absolute;
+    border-radius: 10px;
     width: 100%;
     height: 100px;
     z-index: -1;
@@ -269,4 +284,88 @@ html{
     color: white;
 }
 /* End footer section */
-   
+
+/* media for phone */
+@media (max-width: 850px){
+    html{
+        font-size: 8px;
+    }
+    /* navbar */
+    .nav__bar{
+        display: none;
+    }
+    /* navbar */
+    /* home section */
+    .home{
+        width:100px;
+    }
+    #home .home h2{
+        font-size: 8rem
+    }
+    .home p{
+        letter-spacing: .4rem;
+    }
+    /* end home section */
+
+    /* special section */
+
+    /* end special section */
+
+    /* service section */
+    .service-items{
+        flex-direction: column;
+        flex-basis: 50%;
+    }
+    .service-item{
+        padding: 10px;
+        margin: 20px;
+        box-shadow: none;
+    }
+    .service-item::after{
+        height: 210px;
+    }
+    /* end service section */
+
+    /* contact section */
+    .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        top: 600px;
+    }
+    .contact .section-title{
+        padding: 10px 10px;
+    }
+    .contact_form{
+        width: 60%;
+        padding-bottom: 10px;
+    }
+    .contact::before{
+        left: 90px;
+        top: 110px;
+        width: 350px;
+        padding: 5px 0 0 5px;
+    }
+    .contact_form label{
+        font-size: 2.5rem;
+    }
+    .contact_form input{
+        font-size: 1.5rem;
+    }
+    .contact_form textarea{
+        font-size: 1.5rem;  
+    }
+    /* end contact section */
+
+    /* footer section */
+    .footer{
+        text-align: center;
+        position: relative;
+        top: 600px;
+    }
+    /* end footer section */   
+}
+/* end media for phone */
