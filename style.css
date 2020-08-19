@@ -84,7 +84,7 @@ html{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(./img/photo-1.jpg);
+    background-image: url(/img/photo-1.jpg);
     background-size: cover;
     background-position: left center;
     z-index: -1;
@@ -197,7 +197,7 @@ html{
 /* contact section */
 .contact{
     height: 100vh;
-    background-image: url(./img/contactbackground.jpg);
+    background-image: url(/img/contactbackground.jpg);
     background-position: center left;
     background-size: cover;
 }
@@ -287,7 +287,7 @@ html{
 
 /* media for phone */
 
-@media (max-width: 800px){
+@media only screen and (max-width: 600px){
     html{
         font-size: 5px;
     }
@@ -351,10 +351,10 @@ html{
         padding-bottom: 10px;
     }
     .contact::before{
-        left: 80px;
-        top: 140px;
-        width: 270px;
-        height: 450px;
+        left: 110px !important;
+        top: 180px !important;
+        width: 400px !important;
+        height: 530px !important;
     }
     .contact_form label{
         font-size: 2.5rem;
@@ -379,7 +379,7 @@ html{
 /* end media for phone */
 
 /* media for tablet */
-@media (min-width: 800px) and (max-width: 1200px){
+@media (max-width: 800px){
     html{
         font-size: 8px;
     }
