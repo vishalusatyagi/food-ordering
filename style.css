@@ -223,7 +223,7 @@ html{
     margin-left: 40px;
     margin-bottom: 10px;
 }
-.contact::before{
+/*.contact::before{
     content: "";
     top: 140px;
     left: 60px;
@@ -235,7 +235,7 @@ html{
     width: 360px;
     z-index: -1;
     opacity: .7;
-}
+}*/
 .contact_form label{
     font-size: 2rem;
     letter-spacing: .2rem;
