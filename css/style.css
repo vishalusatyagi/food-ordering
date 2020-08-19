@@ -14,15 +14,11 @@ html{
 .containerr{
     display: flex;
     height: 100vh;
-    /* justify-content: center;
-    align-items: center; */
-
 }
 .section-title{
     display: flex;
     justify-content: center;
     padding: 50px 0 20px 0;
-    /* margin-bottom: 20px; */
 }
 .section-title h1{
     font-size: 4rem;
@@ -139,7 +135,6 @@ html{
     padding-top: 20px;
     justify-content: flex-start;
     align-items: center;
-    /* background-color: coral;*/
 }
 .service-items{
     display: flex;
@@ -158,6 +153,7 @@ html{
     align-items: center;
     justify-content: center;
     flex-basis: 50%;
+    box-shadow: 5px 10px rgb(62, 163, 189);
     position: relative;
     z-index: 1;
 }
@@ -223,6 +219,7 @@ html{
     position: absolute;
     height: 510px;
     width: 410px;
+    box-shadow: -5px -5px white;
     z-index: -1;
     opacity: .7;
 }
