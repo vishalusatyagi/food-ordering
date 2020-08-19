@@ -11,6 +11,9 @@
 html{
     font-size: 10px;
 }
+.navbar{
+    background-color: transparent;
+}
 .container-fluid{
     display: flex;
     height: 100vh;
