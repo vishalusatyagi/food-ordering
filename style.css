@@ -15,6 +15,43 @@ html{
     display: flex;
     min-height: 100vh;
 }
+    /* Navbar  */
+    .largenavv{
+        display: flex;
+        overflow: hidden;
+        position: absolute;
+        z-index: 5;
+    }
+        .largenavv .logo{
+        margin: 10px 60px 0px 50px;
+    }
+        .largenavv .logo img{
+        height: 80px;
+    }
+        .largenavv .list ul{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+        .largenavv .list ul li a{
+        font-size: 3rem;
+        padding: 2rem;
+        color: white;
+        letter-spacing: .1rem;
+    }
+        .largenavv .search img{
+        height: 30px;
+        margin-top: 28px;
+        margin-left: 100px;
+    }
+        .largenavv .cart img{
+        height: 30px;
+        margin-top: 28px;
+        margin-left: 18px;
+    }
+    /* End Navbar*/
 .section-title{
     display: flex;
     justify-content: center;
@@ -28,42 +65,6 @@ html{
 .section-title span{
     color: crimson;
 }
-/* Navbar  */
-.largenavv{
-    display: flex;
-    overflow: hidden;
-    position: absolute;
-    z-index: 5;
-}.largenavv .logo{
-    margin: 10px 60px 0px 50px;
-}
-.largenavv .logo img{
-    height: 80px;
-}
-.largenavv .list ul{
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    margin-left: 150px;
-}
-.largenavv .list ul li a{
-    font-size: 3rem;
-    padding: 2rem;
-    color: white;
-    letter-spacing: .1rem;
-}
-.largenavv .search img{
-    height: 30px;
-    margin-top: 28px;
-    margin-left: 220px;
-}
-.largenavv .cart img{
-    height: 30px;
-    margin-top: 28px;
-    margin-left: 15px;
-}
-/* End Navbar*/
-
 /* Home section */
 #home .home{
     width: 100%;
@@ -103,7 +104,7 @@ html{
     opacity: .4;
 }
 #home .home h2{
-    font-size: 5rem;
+    font-size: 4rem;
     color: white;
 }
 #home .home p{
@@ -142,7 +143,6 @@ html{
     padding-top: 20px;
     justify-content: flex-start;
     align-items: center;
-    /* background-color: coral;*/
 }
 .service-items{
     display: flex;
@@ -153,7 +153,7 @@ html{
     width: 100%;
 }
 .service-item{
-    min-width: 360px;
+    width: 300px;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -161,6 +161,8 @@ html{
     border-bottom-right-radius: 50px;
     background-color: rgb(62, 163, 189);
     margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     align-items: center;
     justify-content: center;
     box-shadow: 5px 0px rgb(62, 163, 189);
@@ -173,7 +175,7 @@ html{
     left: 0;
     position: absolute;
     background-color: black;
-    width: 358px;
+    width: 300px;
     height: 230px;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
@@ -211,7 +213,7 @@ html{
 }
 .contact .section-title{
     color: white;
-    padding: 0;
+    padding-top: 15px;
     padding-bottom: 10px;
 }
 .contact {
@@ -226,7 +228,7 @@ html{
     flex-direction: column;
     color: white;
     margin-left: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 .contact_lower::before{
     content: "";
@@ -236,8 +238,8 @@ html{
     border-radius: 40px;
     box-shadow: -5px -5px white;
     position: absolute;
-    height: 510px;
-    width: 280px;
+    height: 500px;
+    width: 260px;
     z-index: -1;
     opacity: .7;
 }
@@ -252,6 +254,7 @@ html{
     margin-top: 15px;
     padding: 10px;
     border: none;
+    padding-bottom: 10px;
 }
 .contact_form button:hover{
     background-color: tomato;
@@ -295,3 +298,122 @@ html{
     color: white;
 }
 /* End footer section */
+
+
+/* for small phones */
+@media only screen and (max-width:333px){
+    .section-title h1{
+        font-size: 3rem;
+    }
+    html{
+        font-size: 10px;
+    }
+    .largenavv{
+        display: none;
+    }
+    /* home section */
+    #home .home h2{
+        padding-top: 20px;
+        font-size: 3rem;
+    }
+    #home .home p{
+        font-size: 1.5rem;
+    }
+    #home #btn{
+        padding: 6px 8px;
+        font-size: 1.5rem;  
+    }
+    /* end home section */
+    /* service section */
+    .service-items .service-item{
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 300px;
+    }
+    .service-items .service-item::after{
+        width: 300px;
+    }
+    /* end service section */
+
+    /* contact section */
+    .contact_form{
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-bottom: 10px;
+    }
+    .contact .section-title{
+        margin-bottom: 0;
+    }
+    .contact_lower::before{
+        width: 210px;
+        padding-bottom: 10px;
+    }
+    /* end contact section */
+}
+/* end for small phones */
+@media only screen and (min-width:333px) and (max-width: 1200px){
+    .largenavv{
+        display:none;
+    }
+}
+/* media for tablet */
+@media only screen and (min-width:760px) {
+    #smallnavv{
+        display:none;
+    }
+    /* home section */
+    #home .home{
+        align-items: flex-start;
+        padding-left: 100px;
+    }    
+    #home .home h2{
+        font-size: 9rem;
+    }
+    #home .home p{
+        font-size: 3rem;
+        padding-left: 80px;
+    }
+    #home .home #btn{
+        margin-left: 220px;
+    }
+    /* end home section */
+    #special img{
+        height: 120px;
+    }
+    /* service section */
+    .service-item{
+        flex-direction: row;
+    }
+    .service-item{
+        width: 600px;
+        height: 280px;
+    }
+    .service-item::after{
+        width: 210px;
+        height: 260px;
+    }
+    .service-item h2{
+        padding-left: 20px;
+        font-size: 4rem;
+    }
+    .service-item p{
+        padding-left: 20px;
+        font-size: 2.5rem;
+    }
+    /* end service section */
+
+    /* contact section */
+    .contact_lower::before{
+        width: 280px;
+    }
+    /* end contact section */
+}
+/* End Media for tablet */
+
+/* Media Query For Desktop */
+@media only screen and (min-width: 1200px){
+    .service-items{
+    flex-direction: row;
+}
+}
+/* End Media Query For Desktop */
