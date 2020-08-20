@@ -332,6 +332,7 @@ html{
     }
     .service-items .service-item::after{
         width: 300px;
+        height: 480px
     }
     /* end service section */
 
@@ -345,7 +346,7 @@ html{
         margin-bottom: 0;
     }
     .contact_lower::before{
-        width: 210px;
+        width: 220px;
         padding-bottom: 10px;
     }
     /* end contact section */
