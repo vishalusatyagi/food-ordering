@@ -334,6 +334,9 @@ html{
         width: 300px;
         height: 220px;
     }
+    .service-item h2{
+        padding: 10px;
+    }
     /* end service section */
 
     /* contact section */
