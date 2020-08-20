@@ -391,7 +391,7 @@ html{
     }
     .service-item::after{
         width: 210px;
-        height: 260px;
+        height: 210px;
     }
     .service-item h2{
         padding-left: 20px;
